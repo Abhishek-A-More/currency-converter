@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- main container -->
+    <div class="container">
+        <!-- heading box-->
+        <div class="heading">
+            <h1>Currency Converter</h1>
+        </div>
+        <form action="#">
+            <!-- input field box -->
+            <div class="inputfield">
+                <label for="amount">Enter Amount:</label><br>
+                <input type="text" id="amount" placeholder="amount" required>
+            </div>
+            <div class="main">
+                <!-- selecting from box -->
+                <div class="from">
+                    <label for="from" class="txt">From</label>
+                    <div class="flag">
+                        <img src="https://flagsapi.com/US/flat/64.png" >
+                        <select name="from" class="cont" id="from">
+                        </select>
+                    </div>
+                </div>
+                <!-- arrow-sign  -->
+                <div class="convsign">
+                    <i class="bi bi-arrow-left-right"></i>
+                </div>
+                <!-- selecting to box -->
+                <div class="to">
+                    <label for="to" class="txt">To</label>
+                    <div class="flag">
+                        <img src="https://flagsapi.com/IN/flat/64.png">
+                        <select name="to" class="cont" id="to">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <!-- converted amount box -->
+            <div class="convalue">
+                <label for="converted">Converted Amount:</label><br>
+                <input type="text" id="converted" placeholder="amount" class="con-value" readonly>
+                <!-- submit button -->
+                <button type="submit" class="sub">Convert Currency</button>
+            </div>
+        </form>
+    </div>
+    <!-- country coded List file link -->
+    <script src="code.js"></script>
+    <!-- js link -->
+    <script src="currency.js"></script>
+</body>
+</html>
